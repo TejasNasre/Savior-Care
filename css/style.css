@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+     scroll-behavior: smooth;
+     overflow-x: hidden;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 0px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    z-index: 999;
+}
+
+.blocknav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.page-logo {
+    text-align: center;
+    width: 30%;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #462E6A;
+}
+
+.page-logo img {
+    width: 22.59px;
+    height: 27.17px;
+}
+
+header nav ul {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+header nav ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #a8a7aa;
+    /* opacity: 0.5; */
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+header nav ul li a:hover {
+    color: #000000;
+}
+
+.bars {
+    margin-right: 0.6rem;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.bar-position {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.navopen {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-section {
+    height: 100vh;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-page-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 2rem;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main-page-info h1 {
+    font-size: 2.5rem;
+    color: #462E6A;
+}
+
+.main-page-info p {
+    font-size: 1rem;
+    color: #A1D6FB;
+    font-weight: 600;
+}
+
+.main-page-btn {
+    background-color: #458FF6;
+    border: 0;
+    border-radius: 55px;
+    padding: 1rem;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    text-transform: capitalize;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main-page-img {
+    width: 50%;
+}
+
+.main-page-img img {
+    width: 100%;
+}
+
+.servies-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.servies-section h1 {
+    color: #462E6A;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.servies-section p {
+    margin-top: 10px;
+    color: #CCD2E9;
+    font-size: 1.3rem;
+}
+
+.servies-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.servies-btn button {
+    margin-top: 1rem;
+    width: 8rem;
+    color: #458FF6;
+    font-size: 1rem;
+    border-color: #458FF6;
+    padding: 1rem;
+    border-radius: 55px;
+    background-color: white;
+    text-transform: capitalize;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+.box {
+    width: 270px;
+    height: 270px;
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 358px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 20px 10px 25px lightgrey;
+}
+
+.box h2 {
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    text-transform: capitalize;
+}
+
+.des-box {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.des-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.des-info h1 {
+    font-size: 2.5rem;
+    color: #462E6A;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+.des-info p {
+    color: #CCD2E9;
+    font-size: 1.3rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+.des-info button {
+    width: 8rem;
+    color: #458FF6;
+    font-size: 1rem;
+    border-color: #458FF6;
+    padding: 1rem;
+    border-radius: 55px;
+    background-color: white;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+.des-img {
+    width: 50%;
+}
+
+.des-img img {
+    width: 100%;
+}
+
+.costumer-rating {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.costumer-box {
+    width: 70%;
+    height: 70%;
+    background: linear-gradient(208.18deg, #6888C8 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    text-transform: capitalize;
+}
+
+.costumer-box h1 {
+    font-size: 2.5rem;
+}
+
+.costumer-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 1rem;
+}
+
+.info {
+    width: 50%;
+    font-size: 1.3rem;
+}
+
+footer {
+    background: linear-gradient(183.41deg, #6888C8 -8.57%, #5A98F2 82.96%);
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    text-transform: capitalize;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-transform: capitalize;
+}
+
+.footer-info,
+.company,
+.region,
+.help {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.margin-ul {
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+
+ul li {
+    list-style: none;
+    padding: 0.2rem;
+}
+
+.bold {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}

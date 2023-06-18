@@ -1,0 +1,116 @@
+@media screen and (min-width:740px) {
+    .bars {
+        display: none;
+    }
+}
+
+@media screen and (max-width:740px) {
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .page-logo {
+        width: 40%;
+    }
+
+    header nav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .main-page-img {
+        width: 100%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main-page-info {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .main-page-btn {
+        width: 10rem;
+        height: 2.5rem;
+        padding: 0;
+    }
+
+    .servies-section {
+        height: auto;
+    }
+
+    .servies-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .servies-section p {
+        font-size: 1.1rem;
+    }
+
+    .des-box {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .des-img {
+        width: 100%;
+    }
+
+    .des-info {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .costumer-box {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 75%;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .costumer-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .costumer-profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info,
+    .company,
+    .region,
+    .help {
+        width: 100%;
+    }
+}
